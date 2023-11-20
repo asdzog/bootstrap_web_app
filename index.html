@@ -124,6 +124,11 @@
         .lh-tight {
             line-height: 1.25;
         }
+        .scrollable {
+        max-height: 300px; /* Максимальная высота блока с прокруткой */
+        overflow-y: auto; /* Включение вертикальной прокрутки */
+
+}
     </style>
 
 </head>
@@ -300,16 +305,17 @@
                 </div>
             </div>
         </main>
+
         <div class="row">
             <div class="container">
                 <div class="pricing-header text-center">
                     <h4 class="display-4 fw-normal">FAQ</h4>
                 </div>
                 <p class="d-inline-flex gap-1">
-                  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как купить</a>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Доставка</button>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Гарантия</button>
-                  <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Показать/Скрыть всё</button>
+                  <a class="btn btn-info" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Как купить</a>
+                  <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Доставка</button>
+                  <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Гарантия</button>
+                  <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Показать/Скрыть всё</button>
                     </p>
                     <div class="row">
                       <div class="col-3">
@@ -337,8 +343,92 @@
             </div>
         </div>
 
-    </div>
+        <div class="row">
+            <div class="container">
+                <div class="pricing-header text-center">
+                    <h2>Товары</h2>
+                </div>
+                <div class="scrollable">
 
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Номер</th>
+                          <th scope="col">Название товара</th>
+                          <th scope="col">Цена за шт</th>
+                          <th scope="col">Количество</th>
+                          <th scope="col">Итоговая сумма</th>
+                          <th scope="col">Статус заказа</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Light package</td>
+                          <td>100</td>
+                          <td>15</td>
+                          <td>1500</td>
+                          <td>
+                              <div class="alert alert-warning" role="alert">Обработка</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Standart package</td>
+                          <td>200</td>
+                          <td>8</td>
+                          <td>1600</td>
+                          <td>
+                              <div class="alert alert-primary" role="alert">Новый<div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Middle package</td>
+                          <td>300</td>
+                          <td>2</td>
+                          <td>600</td>
+                          <td>
+                              <div class="alert alert-success" role="alert">Обработан</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Adavnced package</td>
+                          <td>400</td>
+                          <td>6</td>
+                          <td>2400</td>
+                          <td>
+                              <div class="alert alert-danger" role="alert">Отмена</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>Premium package</td>
+                          <td>600</td>
+                          <td>12</td>
+                          <td>7200</td>
+                          <td>
+                              <div class="alert alert-primary" role="alert">Новый<div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td>Ultra package</td>
+                          <td>800</td>
+                          <td>3</td>
+                          <td>2400</td>
+                          <td>
+                              <div class="alert alert-success" role="alert">Обработан</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 </main>
 
@@ -358,5 +448,3 @@
 </script>
 </body>
 </html>
-
-
